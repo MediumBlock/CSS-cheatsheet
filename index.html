@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CSS Attributes Cheat Sheet</title>
+  <link href='styles.css' rel='stylesheet'>
+</head>
+
+<body>
+  <h1>CSS Cheat Sheet</h1>
+  <h3>CSS Selectors</h3>
+  <div class="table1">
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">HTML Tag</th>
+          <th scope="col">CSS Example</th>
+          <th scope="col">Description / Key Aspects</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="col1">Type</td>
+          <td class="col2">h1, p, etc.</td>
+          <td class="col3">h1 { color: red }</td>
+          <td class="col4">Selectors that come from the html tag. aka tag name or element selector</td>
+        </tr>
+        <tr>
+          <td class="col1">Universal</td>
+          <td class="col2"></td>
+          <td class="col3">* { color: red }</td>
+          <td class="col4">Selects all elements of any type</td>
+        </tr>
+        <tr>
+          <td class="col1">Class</td>
+          <td class="col2">class='brand'</td>
+          <td class="col3">.brand { color: red }</td>
+          <td class="col4">Selects any object with that class designation</td>
+        </tr>
+        <tr>
+          <td class="col1">Multiple Classes</td>
+          <td class="col2">class='brand color'</td>
+          <td class="col3">.brand { } .color { }</td>
+          <td class="col4">Able to have two or more classes declared within one statement, must be seperated with a space</td>
+        </tr>
+        <tr>
+          <td class="col1">ID</td>
+          <td class="col2">id='title'</td>
+          <td class="col3">#title: { color: red }</td>
+          <td class="col4">Unlike classes that can be used broadly throughout, an id can only have a single value and be used once</td>
+        </tr>
+        <tr>
+          <td class="col1">Attribute</td>
+          <td class="col2">href</td>
+          <td class="col3">[href] { color: red }</td>
+          <td class="col4">[href] would target all elements with a href attribute</td>
+        </tr>
+        <tr>
+          <td class="col1">Granular Attribute</td>
+          <td class="col2">img[src=....winter]</td>
+          <td class="col3">img[src*='winter']</td>
+          <td class="col4">This would select an element with attribute of src that containts the string 'winter'</td>
+        </tr>
+        <tr>
+          <td class="col1">Pseudo Class</td>
+          <td class="col2">p:hover p:visited</td>
+          <td class="col3">p:hover { color: red} </td>
+          <td class="col4">pseudo classes always start with a : and can be attached to any selector</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <h3>CSS Visual Rules</h3>
+  <div class="table2">
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">CSS Example</th>
+          <th scope="col">Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="col1">font-family</td>
+          <td class="col2">font-family: Georgia;</td>
+          <td class="col3">defines the typeface of an element</td>
+        </tr>
+        <tr>
+          <td class="col1">font-size</td>
+          <td class="col2">font-size: 16px;</td>
+          <td class="col3">Controls the size of text displayed</td>
+        </tr>
+        <tr>
+          <td class="col1">font-weight</td>
+          <td class="col2">font-weight: bold;</td>
+          <td class="col3">How thin or thick text displays (400 for normal 700 bold)</td>
+        </tr>
+        <tr>
+          <td class="col1">text-align</td>
+          <td class="col2">text-align: center;</td>
+          <td class="col3">places text left, right or center of its parent container.</td>
+        </tr>
+        <tr>
+          <td class="col1">color</td>
+          <td class="col2">color: red;</td>
+          <td class="col3">defines text color, can also use rgb, hsl & hex(#ff0000)</td>
+        </tr>
+        <tr>
+          <td class="col1">background-color</td>
+          <td class="col2">background-color: red;</td>
+          <td class="col3">sets the color behind text</td>
+        </tr>
+        <tr>
+          <td class="col1">opacity</td>
+          <td class="col2">opacity: 70%</td>
+          <td class="col3">can make an element transparent (0%)</td>
+        </tr>
+        <tr>
+          <td class="col1">background-image</td>
+          <td class="col2">background-image: url('https://....soccer.jpeg');</td>
+          <td class="col3">sets a background image</td>
+        </tr>
+        <tr>
+          <td class="col1">!important</td>
+          <td class="col2">color: red !important;</td>
+          <td class="col3">will override any style, don't use it</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <h3>The Box Model</h3>
+  <div class="table3">
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">CSS Example</th>
+          <th scope="col">Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="col1">width & height</td>
+          <td class="col2">width: 20px; height: 1em;</td>
+          <td class="col3">width and height of content area</td>
+        </tr>
+        <tr>
+          <td class="col1">padding</td>
+          <td class="col2">padding: 16px;</td>
+          <td class="col3">space between content area and border</td>
+        </tr>
+        <tr>
+          <td class="col1">border</td>
+          <td class="col2">border: 3px solid coral;</td>
+          <td class="col3">How thin or thick border is, what style of border, and color</td>
+        </tr>
+        <tr>
+          <td class="col1">border-radius</td>
+          <td class="col2">border-radius: 5px;</td>
+          <td class="col3">modifies the corner boxes of an element, can use 50% to get a perfect circle</td>
+        </tr>
+        <tr>
+          <td class="col1">padding</td>
+          <td class="col2">padding: 10px;</td>
+          <td class="col3">between contents of box and borders, can use padding-top: 10px; or padding: 10px 5px; (top&bot 10, right&left 5)</td>
+        </tr>
+        <tr>
+          <td class="col1">margin</td>
+          <td class="col2">margin-bottom: 10px;</td>
+          <td class="col3">the space directly outside of the box, remember margins stack horizontally not vertically</td>
+        </tr>
+        <tr>
+          <td class="col1">auto</td>
+          <td class="col2">margin: 0 auto;</td>
+          <td class="col3">centers an element in its containing element, but must have a width (width: 50px)</td>
+        </tr>
+        <tr>
+          <td class="col1">min / max width & height</td>
+          <td class="col2">min width: 15px </td>
+          <td class="col3">sets a min / max width for viewability</td>
+        </tr>
+        <tr>
+          <td class="col1">overflow</td>
+          <td class="col2">overflow: hidden;</td>
+          <td class="col3">controls what happens to contents that spills outside parent box, visible is default (hidden, scroll, visible)</td>
+        </tr>
+        <tr>
+          <td class="col1">resetting defaults</td>
+          <td class="col2">* { margin: 0; padding: 0; }</td>
+          <td class="col3">usually the first css rule in an external stylesheet, resets to default values</td>
+        </tr>
+        <tr>
+          <td class="col1">visibility</td>
+          <td class="col2">visibility: hidden;</td>
+          <td class="col3">changes the visibility (hidden, visible, collapse) hidden elements still reserve a space (unlike display: none;)</td>
+        </tr>
+        <tr>
+          <td class="col1">border-box</td>
+          <td class="col2">* { box-sizing: border-box; }</td>
+          <td class="col3">usually put at the top, makes the box width the actual width (as opposed to content-box)</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <img src="resources/boxmodel.jpg">
+  <h3>Display & Position</h3>
+  <div class="table4">
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">CSS Example</th>
+          <th scope="col">Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="col1">static</td>
+          <td class="col2">position: static;</td>
+          <td class="col3">the default position</td>
+        </tr>
+        <tr>
+          <td class="col1">relative</td>
+          <td class="col2">position: relative;</td>
+          <td class="col3">used in conjunction with top: bottom: left: right: (remember it is offset and doesnt change position of other elements)</td>
+        </tr>
+        <tr>
+          <td class="col1">absolute</td>
+          <td class="col2">position: absolute;</td>
+          <td class="col3">will act as if no other elements are present</td>
+        </tr>
+        <tr>
+          <td class="col1">fixed</td>
+          <td class="col2">position: fixed;</td>
+          <td class="col3">will sty in a fixed place, like a navbar that stays at the top as the page moves</td>
+        </tr>
+        <tr>
+          <td class="col1">sticky</td>
+          <td class="col2">position: sticky;</td>
+          <td class="col3">will move with the screen until it hits a certain spot</td>
+        </tr>
+        <tr>
+          <td class="col1">z-index</td>
+          <td class="col2">z-index: 3;</td>
+          <td class="col3">determines which element shows on top, higher number will be shown first</td>
+        </tr>
+        <tr>
+          <td class="col1">inline</td>
+          <td class="col2">display: inline</td>
+          <td class="col3">an element will only take up as much space as is needed</td>
+        </tr>
+        <tr>
+          <td class="col1">block</td>
+          <td class="col2">display: block;</td>
+          <td class="col3">fill the entire width, but can set their width, they take up an entire line but only need the height necessary for their content</td>
+        </tr>
+        <tr>
+          <td class="col1">inline-block</td>
+          <td class="col2">display: inline-block;</td>
+          <td class="col3">combines both features of block and inline; can appear next to each other and specify their dimensions using width and height</td>
+        </tr>
+        <tr>
+          <td class="col1">float</td>
+          <td class="col2">float: left;</td>
+          <td class="col3">moves an element as far left or right as possible</td>
+        </tr>
+        <tr>
+          <td class="col1">clear</td>
+          <td class="col2">clear: both;</td>
+          <td class="col3">dictates how other elements behave and where they can touch, (both, left, right, none) both meaning neither side can touch another element, none means either side can</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
