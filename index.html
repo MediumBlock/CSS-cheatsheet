@@ -103,6 +103,11 @@
           <td class="col3">places text left, right or center of its parent container.</td>
         </tr>
         <tr>
+          <td class="col1">text-decoration</td>
+          <td class="col2">text-decoration: underline;</td>
+          <td class="col3">changes the decoration of text (underline, overline check mdn for more)</td>
+        </tr>
+        <tr>
           <td class="col1">color</td>
           <td class="col2">color: red;</td>
           <td class="col3">defines text color, can also use rgb, hsl & hex(#ff0000)</td>
@@ -127,8 +132,107 @@
           <td class="col2">color: red !important;</td>
           <td class="col3">will override any style, don't use it</td>
         </tr>
+        <tr>
+          <td class="col1">line-height</td>
+          <td class="col2">line-height: 1.4;</td>
+          <td class="col3">increases the distance between lines</td>
+        </tr>
+        <tr>
+          <td class="col1">letter-spacing</td>
+          <td class="col2">letter-spacing: 1px;</td>
+          <td class="col3">increases the distance between letters in a word</td>
+        </tr>
       </tbody>
     </table>
+  </div>
+  <div class="container">
+  <h3>Semantic HTML structure & Misc HTML</h3>
+  <div class="table-semantic">
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Tag Name</th>
+          <th scope="col">Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="colsem" colspan="2">Semantic HTML is structured header -> nav -> main -> footer</td>
+        </tr>
+        <tr>
+          <td class="col1">&lt;!DOCTYPE html&gt;</td>
+          <td class="col2">lets browser know what doctype</td>
+        </tr>
+        <tr>
+          <td class="col1">&lt;html&gt;</td>
+          <td class="col2">contains all code</td>
+        </tr>
+        <tr>
+          <td class="col1">&lt;head&gt;</td>
+          <td class="col2">contains the title of the page and other inf</td>
+        </tr>
+        <tr>
+          <td class="col1">&lt;body&gt;</td>
+          <td class="col2">contains all the content</td>
+        </tr>
+        <tr>
+          <td class="col1">&lt;header&gt;</td>
+          <td class="col2">usually for nav links or introductory content such as headings</td>
+        </tr>
+        <tr>
+          <td class="col1">&lt;nav&gt;</td>
+          <td class="col2">for nav bar lists, can go in header or on its own</td>
+        </tr>
+        <tr>
+          <td class="col1">&lt;main&gt;</td>
+          <td class="col2">the dominate content, between nav and footer</td>
+        </tr>
+        <tr>
+          <td class="col1">&lt;footer&gt;</td>
+          <td class="col2">contains contact information etc.</td>
+        </tr>
+        <tr>
+          <td class="col1">&lt;section&gt;</td>
+          <td class="col2">defines elements, such as chapters, headings, or any other area of the document with the same theme.</td>
+        </tr>
+        <tr>
+          <td class="col1">&lt;article&gt;</td>
+          <td class="col2">holds content that makes sense on its own. can hold content such as articles, blogs etc.</td>
+        </tr>
+        <tr>
+          <td class="col1">&lt;figure&gt;</td>
+          <td class="col2">encapsulates media like an image</td>
+        </tr>
+        <tr>
+          <td class="col1">&lt;figcaption&gt;</td>
+          <td class="col2">adds a caption to a figure but is inside &lt;figure&gt; element</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="table-html-misc">
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">HTML Tag</th>
+          <th scope="col">Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="col1">Horizontal rule</td>
+          <td class="col2">&lt;hr&gt;</td>
+          <td class="col3">inserts a horizontal rule to seperate doc, no end tag</td>
+        </tr>
+        <tr>
+          <td class="col1">Break rule</td>
+          <td class="col2">&lt;br&gt;</td>
+          <td class="col3">inserts a line break which makes the text / imagine following moved to next line</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
   </div>
   <h3>The Box Model</h3>
   <div class="table3">
@@ -271,6 +375,248 @@
           <td class="col2">clear: both;</td>
           <td class="col3">dictates how other elements behave and where they can touch, (both, left, right, none) both meaning neither side can touch another element, none means either side can</td>
         </tr>
+      </tbody>
+    </table>
+  </div>
+  <h3>Improved styling</h3>
+  <div class="table5">
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">CSS / HTML Example</th>
+          <th scope="col">Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="col1">tooltip</td>
+          <td class="col2"><a href="https:" title="codeacdemy is great">Codecademy</a></td>
+          <td class="col3">the tooltip displayed when mousing over the link</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <h3>Cursor States & Buttons</h3>
+  <div class="table6">
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">CSS Example</th>
+          <th scope="col">Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="col1">unvisited</td>
+          <td class="col2">a:link</td>
+          <td class="col3">how it looks when the link hasnt been clicked yet</td>
+        </tr>
+        <tr>
+          <td class="col1">visited</td>
+          <td class="col2">a:visited</td>
+          <td class="col3">how it looks when the link has been clicked and u go back to the page</td>
+        </tr>
+        <tr>
+          <td class="col1">hover</td>
+          <td class="col2">a:hover</td>
+          <td class="col3">how the link looks when mousing over it</td>
+        </tr>
+        <tr>
+          <td class="col1">active</td>
+          <td class="col2">a:active</td>
+          <td class="col3">how the link looks as the moment it gets clicked</td>
+        </tr>
+        <tr>
+          <td class="col1">button simple</td>
+          <td class="col2"><div class="button">Click me</div></td>
+          <td class="col3">bare minimum for a skeuomorphic button (check code)</td>
+        </tr>
+        <tr>
+          <td class="col1">box shadow</td>
+          <td class="col2">box-shadow: 0px 6px;</td>
+          <td class="col3">shadow 0px X, 6px y, moves 0px x direction and 6px y direction</td>
+        </tr>
+        <tr>
+          <td class="col1">transition</td>
+          <td class="col2">transition: color .1s ease-in</td>
+          <td class="col3">adds a delay to make it seem more seamless check mdn for more</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <h3>Secondary Navigation</h3>
+  <div class="table7">
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">CSS Example</th>
+          <th scope="col">Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="col1">+ & content</td> 
+          <td class="col2">.breadcrumb il+il::before { content: ">" }</td>
+          <td class="col3">between two touching li elements puts a > </td>
+        </tr>
+        <tr>
+          <td class="col1">Making Arrows</td>
+          <td class="col2"><div class="arrow-right"></div></td>
+          <td class="col3">By making 1 side opaque and the rest transparent can make an arrow</td>
+        </tr>
+        <tr>
+          <td class="col1">not</td>
+          <td class="col2">.site-nav-mobile li:not(:last-child) { }</td>
+          <td class="col3">looks at all of li elements in its respective list and then applies a specific CSS property to each li that is not :last-child or last list item.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <h3>Flex box</h3>
+  <div class="table8">
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">CSS Example</th>
+          <th scope="col">Description (<span class="red">red</span> for declaration on flex containers only)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="col1">flex</td>
+          <td class="col2">display: flex;</td>
+          <td class="col3">changes an element to a block-level container with flex items inside</td>
+        </tr>
+        <tr>
+          <td class="col1">inline-flex</td>
+          <td class="col2">display: inline-flex;</td>
+          <td class="col3">allows multiple flex <b>containers</b> to appear inline with each other</td>
+        </tr>
+        <tr>
+          <td class="col1" rowspan="5">justify content</td>
+          <td class="col2">justify-content: flex-start;</td>
+          <td class="col3">all items in order, starting from the left, no extra space between before or after</td>
+        </tr>
+        <tr>
+          <td class="col2">justify-content: flex-end;</td>
+          <td class="col3">positioned in order with last item starting on right of container, no xtra space between before or after</td>
+        </tr>
+        <tr>
+          <td class="col2">justify-content: center;</td>
+          <td class="col3">all items in order in the center of the container with no xtra space between before or after</td>
+        </tr>
+        <tr>
+          <td class="col2">justify-content: space-around;</td>
+          <td class="col3">positioned with equal space before and after, resulting in double space between</td>
+        </tr>
+        <tr>
+          <td class="col2">justify-content: space-between;</td>
+          <td class="col3">equal space between but no space before first or after last elements</td>
+        </tr>
+        <tr>
+          <td class="col1" rowspan="5">align items</td>
+          <td class="col2">align-items: flex-start;</td>
+          <td class="col3">positioned at the top of parent container</td>
+        </tr>
+        <tr>
+          <td class="col2">align-items: flex-end;</td>
+          <td class="col3">positioned at bottom of the parent container</td>
+        </tr>
+        <tr>
+          <td class="col2">align-items: center;</td>
+          <td class="col3">center of all elements will be positioned halfway between top and bottom of parent</td>
+        </tr>
+        <tr>
+          <td class="col2">align-items: baseline;</td>
+          <td class="col3">the bottom line of the conent will be aligned with each other (so moved to the point of the lowest item)</td>
+        </tr>
+        <tr>
+          <td class="col2">align-items: stretch;</td>
+          <td class="col3">if possible items will stretch from top to bottom of a container (default value) elements with a specified height will not stretch, elements with a min height or no height will stretch</td>
+        </tr>
+        <tr>
+          <td class="col1">flex grow</td>
+          <td class="col2">flex-grow: 1;</td>
+          <td class="col3">determine by what rate an element will grow along the main axis (horizontal)</td>
+        </tr>
+        <tr>
+          <td class="col1">flex shrink</td>
+          <td class="col2">flex-shrink: 1;</td>
+          <td class="col3">same as above but with shrinking (default value is 1)</td>
+        </tr>
+        <tr>
+          <td class="col1">flex basis</td>
+          <td class="col2">flex-basis: 100px</td>
+          <td class="col3">determines the starting size of a flex element.</td>
+        </tr>
+        <tr>
+          <td class="col1">flex</td>
+          <td class="col2">flex: 1 2 100px;</td>
+          <td class="col3">shortened version: grow shrink basis</td>
+        </tr>
+        <tr>
+          <td class="col1 red" rowspan="3">flex-wrap</td>
+          <td class="col2">flex-wrap: wrap;</td>
+          <td class="col3">child elements of a flex container that dont fit will go down a line</td>
+        </tr>
+        <tr>
+          <td class="col2">flex-wrap: wrap-reverse;</td>
+          <td class="col3">same as wrap, but in a reverse order</td>
+        </tr>
+        <tr>
+          <td class="col2">flex-wrap: nowrap;</td>
+          <td class="col3">stops items from wrapping, which is the default value</td>
+        </tr>
+        <tr>
+          <td class="col1 red" rowspan="6">align content</td>
+          <td class="col2">align-content: flex-start;</td>
+          <td class="col3">all rows of elements will be positioned at the top of parent container</td>
+        </tr>
+        <tr>
+          <td class="col2">align-content: flex-end;</td>
+          <td class="col3">all rows of elements will be positioned at bottom of the parent container</td>
+        </tr>
+        <tr>
+          <td class="col2">align-content: center;</td>
+          <td class="col3">all rows of elements will be center of all elements will be positioned halfway between top and bottom of parent</td>
+        </tr>
+        <tr>
+          <td class="col2">align-content: space-between;</td>
+          <td class="col3">all rows of elements will be spaced evenly from top the bottom with no space above first or below last</td>
+        </tr>
+        <tr>
+          <td class="col2">align-content: space-around;</td>
+          <td class="col3">all rows of elements will be spaced evenly from top to the bottom of the container with same amount of space at top, bottom and between</td>
+        </tr>
+        <tr>
+          <td class="col2">align-content: stretch;</td>
+          <td class="col3">if a min height or no height the rows of elements will stretch to fill the parent container from top to bottom (default)</td>
+        </tr>
+        <tr>
+          <td class="col1 red" rowspan="4">flex-direction</td>
+          <td class="col2">flex-direction: row;</td>
+          <td class="col3">elements will be positioned from left to right across parent element (default)</td>
+        </tr>
+        <tr>
+          <td class="col2">flex-direction: row-reverse;</td>
+          <td class="col3">same as wrap, but in a reverse order (right to left)</td>
+        </tr>
+        <tr>
+          <td class="col2">flex-direction: column;</td>
+          <td class="col3">positioned from top to bottom starting from top left</td>
+        </tr>
+        <tr>
+          <td class="col2">flex-direction: column-reverse;</td>
+          <td class="col3">positioned from bottom to top starting from bottom left</td>
+        </tr>
+        <tr>
+          <td class="col1 red">flex flow</td>
+          <td class="col2">flew-flow: columnn wrap</td>
+          <td class="col3">shorthand for flex-wrap & direction</td>
       </tbody>
     </table>
   </div>
